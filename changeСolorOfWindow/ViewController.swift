@@ -24,7 +24,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        redSlider.value = 1
+        redLineCounterLabel.text = "1.00"
+        
+        greenSlider.value = 1
+        greenLineCounterLabel.text = "1.00"
+        
+        blueSlider.value = 1
+        blueLineCounterLabel.text = "1.00"
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,5 +53,3 @@ class ViewController: UIViewController {
         )
     }
 }
-
-
