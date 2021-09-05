@@ -62,18 +62,18 @@ class MyViewController: UIViewController {
     @IBAction func changeСolorWithSlider(_ sender: UISlider) {
         
         switch sender {
-        case redSlider:
-            redTextField.text = String(format: "%.2f", redSlider.value)
-            redLineCounterLabel.text = redTextField.text
-        case greenSlider:
-            greenTextField.text = String(format: "%.2f", greenSlider.value)
-            greenLineCounterLabel.text = greenTextField.text
-        default:
-            blueTextField.text = String(format: "%.2f", blueSlider.value)
-            blueLineCounterLabel.text = blueTextField.text
+            case redSlider:
+                redTextField.text = String(format: "%.2f", redSlider.value)
+                redLineCounterLabel.text = redTextField.text
+            case greenSlider:
+                greenTextField.text = String(format: "%.2f", greenSlider.value)
+                greenLineCounterLabel.text = greenTextField.text
+            default:
+                blueTextField.text = String(format: "%.2f", blueSlider.value)
+                blueLineCounterLabel.text = blueTextField.text
         }
         
-            paintWindowView.backgroundColor = UIColor(
+        paintWindowView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
